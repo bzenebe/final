@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('http://getbootstrap.com/dist/css/bootstrap.css');
+body {
+	margin:0;
+
+	padding: 0;
+}
+
+:root{
+	--color-black: #000000;
+	--font-rale: 'Source Sans Pro', sans-serif;;
+}
+
+.font-staat{
+	font:normal 400 18px var(--font-staat);
+}
+
+.bgcolor-black {
+
+	background-color:  black;
+}
+p.name {
+	width: 100%;
+	font-size: 40px;
+	margin-top: 100px;
+	font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: white !important;
+}
+
+
+a.nav-item{
+
+    color: #c9c9c9;
+}
+.nav-item:hover{
+
+    color: #858585;
+}
+
+#header nav {
+	height: 100vh;
+}
+
+img {
+width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition-duration: 0.3s;
+	object-position: center;
+
+}
+
+img:hover {
+    opacity: .5;
+}
+
+toggle-button {
+    color: yellow;
+}
+
+ p.name {
+    text-decoration: none !important;
+}
+
+ p.name:hover {
+    text-decoration: underline !important;
+    text-decoration-color: black !important;
+}
+
+/* global classes */
+
+
+.active {
+    color: yellow!important;
+}
+
+
+}
+
+.thumbail-caption {
+    display: block;
+    position: relative;
+}
+
+.thumbnail-caption .caption {
+    display: none;
+    position: absolute;
+ bottom: 0%;
+ padding: 2%;
+    width: 100%;
+    height: 15%;
+    margin-bottom: 5%;
+    
+background-color: none;
+}
+
+.thumbnail-caption:hover .caption {
+        transition: color .3s ease-in-out, color .3s ease-in-out;
+    background-color: rgba(0,0,0,.9);
+    display: block;
+}
+
+.bgcolor-black{
+    background-color: var(--color-black);
+}
+
+/* #global classes */
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+    transition: left .5s ease;
+}
+
+
+#header .nav-link{
+	text-align: center;
+    margin: 1rem 0rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+
+}
+
+#header .nav-link:hover{
+    
+    text-decoration: none;
+}
+
+#header .toggle-button{
+    background: none;
+    color: white;
+    position: fixed;
+    border-radius: 10px;
+    top: 23px;
+    right: 22px;
+    border: 2px solid var(--color-border);
+}
+
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+}
+
+/* site-main */
+
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+
+
+@media screen and (min-width: 908px){
+    h2 {
+    font-size: 1.8em !important;
+    color: gray;
+
+}
+}
+h2 {
+    font-size: 1.4em !important;
+    color: gray;
+
+}
+h3 {
+    font-size: 1em !important;
+    color: #404040;
+    font-weight: 200;
+    display: inline-block;
+
+}
+h4 {
+    font-size: .95em !important;
+}
+
+
+/* #site-main */
+html {
+    background-color: black;
+}
+main {
+    background-color: black;
+
+}
+
+
+.illustration h2{
+    color: #f5f5f5;
+
+
+}
+
+.illustration img{
+    
+}
+
+.caption{
+    color: #c9c9c9;
+    font-size: 1.2rem;
+
+}
+
+
+
+.caption-illustration {    
+ 
+
+ display: absolute;
+}
+
+.caption-illustration h4 {
+    
+}
+
+.thumbnail-caption .caption-illustration {
+position: absolute;
+
+ width: 90%;
+}
+
+div.thumbnail-caption {
+    margin-bottom: 6em !important;
+}
+
+/*.thumbnail-caption img {
+    padding-bottom: 4rem!important;
+}*/
+
+.about-image {
+    opacity: .9;
+    filter: grayscale(100%);
+}
+
+h3 {
+
+    font-size: 1.5rem !important;
+}
+
+.hide-me {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.75);
+}
+
+
+button {
+  background-color: #046380;
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 0 #034154;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+  position: relative;
+  top: -10px;
+}
+
+button:hover {
+  background-color: #034F66;
+}
+
+button:active {
+  background-color: #034154;
+  box-shadow: none;
+  position: relative;
+  top: -8px;
+  left: 2px;
+}
+
+p {
+  padding: 4px 0 2px 8px;
+  line-height: 1.7;
+  border-bottom: 1px dotted #DDD;
+  list-style: none;
+  margin: 0;
+}
+
