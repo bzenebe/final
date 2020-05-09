@@ -15,14 +15,29 @@
 <script>
 
 $(document).ready(function(){
-    $("button").click(function(){
-        $("#box").load("test-content.html");
+    $("a.cap").click(function(){
+        $("#site-main").load("capstone.html");
     });
 });
 
 $(document).ready(function(){
     $("a.il").click(function(){
         $("#site-main").load("illustration.html");
+    });
+});
+$(document).ready(function(){
+    $("a.ab").click(function(){
+        $("#site-main").load("about.html");
+    });
+});
+$(document).ready(function(){
+    $("a.sk").click(function(){
+        $("#site-main").load("sketchbook.html");
+    });
+});
+$(document).ready(function(){
+    $("a.shop").click(function(){
+        $("#site-main").load("shop.html");
     });
 });
 
@@ -44,11 +59,11 @@ $(document).ready(function(){
 
                         <div class="d-flex flex-column">
                             <a class="nav-item nav-link  font-os il">Illustration</a>
-                            <a href="sketchbook.html" class="nav-item nav-link font-os">Sketchbook</a>
-                            <a href="capstone.html" class=" nav-item nav-link  font-os">Something Special</a>
-                            <a href="about.html" class="nav-item nav-link font-os ">About me</a>
-                            <a href="shop.html" class="nav-item nav-link  font-os ">Shop</a>
-                            <div id="box" class="nav-item nav-link  font-os" ><button type="button">+</button></div>
+                            <a class="nav-item nav-link font-os sk">Sketchbook</a>
+                            <a class=" nav-item nav-link  font-os cap">Something Special</a>
+                            <a class="nav-item nav-link font-os ab">About me</a>
+                            <a class="nav-item nav-link  font-os shop">Shop</a>
+                            <!-- <div id="box" class="nav-item nav-link  font-os" ><button type="button">+</button></div> -->
                             
                         </div>
                     </nav>
