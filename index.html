@@ -24,7 +24,7 @@
         <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $("ajxBox").load("test-content.html");
+        $("box").load("test-content.html");
     });
 });
 </script>
@@ -78,6 +78,12 @@ $(document).ready(function(){
                     <section class="work py-5 px-4" id="portfolio">
 
                         <div class="row">
+                            <div id="box">
+        <h2>Click button to load new content inside DIV box</h2>
+    </div>
+    <button type="button">Load Content</button>
+
+
                             <div class="thumbnail-caption col-sm-4 pb-4">
                                <!-- <a href="sketchbook1.html"> -->
                                 <img src="./assets/Sk3.jpg" alt="work1"> 
