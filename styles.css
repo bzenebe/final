@@ -173,11 +173,11 @@ p.name {
 
 p.nav-item{
 
-    color: #c9c9c9;
+    color: #c9c9c9 !important;;
 }
 p.nav-item:hover{
 
-    color: #858585;
+    color: #858585 !important;;
 }
 
 #header nav {
